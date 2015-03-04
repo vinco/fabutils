@@ -5,7 +5,7 @@ Utilities for creating better fabric tasks.
 
 ## Install
 
-```
+```bash
 $ pip install vo-fabutils
 ```
 
@@ -44,14 +44,9 @@ First you must create a JSON file containing your environment configuration.
 
 Note that:
 
-+ You can define any arbitrary string as env properties and these will be passed
-  to the task's env.
-+ Properties with names "reserved" by fabric will be recognized by it and
-  treated with the special meanig that fabric has for them.
-+ The only caveat is that if you define an array of `command_prefixes` you must
-  only list the path to the script and this will be automatically prepended to
-  with the word 'souce'. For example if you define `../some_script` in your
-  command_prefixes, it will be tranformed to `source ../some_script`.
++ You can define any arbitrary string as env properties and these will be passed to the task's env.
++ Properties with names "reserved" by fabric will be recognized by it and treated with the special meanig that fabric has for them.
++ The only caveat is that if you define an array of `command_prefixes` you must only list the path to the script and this will be automatically prepended to with the word 'souce'. For example if you define `../some_script` in your command_prefixes, it will be tranformed to `source ../some_script`.
 + Every directory path must end with a trailing slash.
 
 
