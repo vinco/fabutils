@@ -17,7 +17,8 @@ setup(
     url='https://github.com/vinco/fabutils',
     license='Apache License (2.0)',
     install_requires=[
-        'fabric >= 1.10'
+        'fabric >= 1.10',
+        'jsonschema >= 2.4'
     ],
     packages=find_packages(),
     include_package_data=True,
