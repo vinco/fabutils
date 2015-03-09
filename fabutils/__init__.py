@@ -3,4 +3,4 @@ from .utils import *
 
 
 __author__ = 'Vinco Orbis'
-__version__ = '0.1.0'
+__version__ = '0.1.1'
