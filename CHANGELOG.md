@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.3 (2015-04-01)
+Bugfixes:
+ + Fix import error in new fanutils.context module
+
 ## 0.1.2 (2015-04-01)
 Features:
  + Adds fabutils.context.CommandMessage class to squash command output with fancy messages
