@@ -1,12 +1,16 @@
 # Changelog
 
+## 0.1.4 (2015-04-09)
+Bugfixes:
+ + Fix bug in ```fabutils.env.set_env_from_json``` when setting environment from multiple files
+
 ## 0.1.3 (2015-04-01)
 Bugfixes:
  + Fix import error in new fanutils.context module
 
 ## 0.1.2 (2015-04-01)
 Features:
- + Adds fabutils.context.CommandMessage class to squash command output with fancy messages
+ + Adds ```fabutils.context.CommandMessage``` class to squash command output with fancy messages
 
 ## 0.1.1 (2015-03-06)
 Features:
