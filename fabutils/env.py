@@ -78,8 +78,8 @@ def set_env_from_json(json_object, json_schema=None):
 
     # Prepend the command "source" to each one of the commands defined in the
     # command_prefixes property of the json file.
-    prefixes = environment.get('command_prefixes', [])
+    prefixes = environment.pop('command_prefixes', [])
     sourced_prefixes = map(lambda p: 'source %s' % p, prefixes)
-    environment.update(command_prefixes=sourced_prefixes)
 
     env.update(environment)
+    env.command_prefixes += sourced_prefixes
